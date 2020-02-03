@@ -1,6 +1,7 @@
 # Rekrutacja - Projekt Ekranu Menu
 Unity Version 2019.2.9f1 Personal
-wykorzystano plik audio "infobleep.wav" dostepny na stronie : freesound.org , Autor: Divinux, Creative Commons 0 License
+
+w projekcie wykorzystano plik audio "infobleep.wav" dostepny na stronie : freesound.org , Autor: Divinux, Creative Commons 0 License
 
 Projekt wykonany na potrzeby rekrutacji na stanowisko Junior Unity Developer
 
