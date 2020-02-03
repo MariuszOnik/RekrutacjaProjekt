@@ -7,4 +7,4 @@ stworzeniu ekranu z trzema przyciskami:
 2) pokazuje jakiś tekst na 3 sekundy
 3) odtwarza dźwięk
 
-Link do działającej aplikacji : 
+Link do działającej aplikacji : https://mariuszonik.github.io/ZadanieRekrutacyjne/.
