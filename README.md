@@ -2,6 +2,7 @@
 Unity Version 2019.2.9f1 Personal
 
 Projekt wykonany na potrzeby rekrutacji na stanowisko Junior Unity Developer
+
 Zadanie polegało na : 
 stworzeniu ekranu z trzema przyciskami:
 1) otwiera popup (obiekt z przykładowym tekstem i przyciskiem do jego zamknięcia)
