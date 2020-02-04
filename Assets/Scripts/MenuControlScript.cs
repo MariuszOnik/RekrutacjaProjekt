@@ -36,12 +36,12 @@ public class MenuControlScript : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         
         //we want to be sure that we will start in the main menu panel
-        DisableAllPanel();
+        DisableAllPanels();
         ShowPanel(mainPanel);
     }
 
     
-    public void DisableAllPanel()
+    public void DisableAllPanels()
     {
         mainPanel.SetActive(false);
         popUpPanel.SetActive(false);
@@ -90,7 +90,7 @@ public class MenuControlScript : MonoBehaviour
 
     public void ClouseInfoPanleButton()
     {
-        DisableAllPanel();
+        DisableAllPanels();
         ShowPanel(mainPanel);
     }
 
@@ -108,7 +108,7 @@ public class MenuControlScript : MonoBehaviour
         if(counter == 0)
         {
 
-            DisableAllPanel();
+            DisableAllPanels();
             ShowPanel(mainPanel);
             //we are restoring button functionality
             showInfoButton.GetComponent<Button>().interactable = true;
