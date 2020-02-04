@@ -36,12 +36,12 @@ public class MenuControlScript : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         
         //we want to be sure that we will start in the main menu panel
-        disableAllPanel();
+        DisableAllPanel();
         ShowPanel(mainPanel);
     }
 
     
-    public void disableAllPanel()
+    public void DisableAllPanel()
     {
         mainPanel.SetActive(false);
         popUpPanel.SetActive(false);
@@ -50,16 +50,11 @@ public class MenuControlScript : MonoBehaviour
 
     public void ShowPanel(GameObject panel)
     {
-        panel.SetActive(true); 
-    }
-
-    public void showPanel(GameObject panel)
-    {
         panel.SetActive(true);
     }
 
     //after click the button we start this function
-    public void playSound()
+    public void PlaySound()
     {
         //we check if the file has loaded
         if (testSound.loadState == AudioDataLoadState.Loaded)
@@ -69,13 +64,13 @@ public class MenuControlScript : MonoBehaviour
         }
     }
 
-    public void showPopUpWindow()
+    public void ShowPopUpWindow()
     {
         ShowPanel(popUpPanel);
         
     }
 
-    public void showInfoPanel()
+    public void ShowInfoPanel()
     {
         ShowPanel(infoPanel);
 
@@ -84,27 +79,27 @@ public class MenuControlScript : MonoBehaviour
         soundTestButton.GetComponent<Button>().interactable = false;
         popUpButton.GetComponent<Button>().interactable = false;
         //we start the countdown
-        StartCoroutine("countingDownTime", timeToDisablePanel);
+        StartCoroutine("CountingDownTime", timeToDisablePanel);
     }
 
     //update timer
-    void updateVisualTimer(int counter)
+    void UpdateVisualTimer(int counter)
     {
         visualTimeCounter.GetComponent<Text>().text = counter.ToString();
     }
 
-    public void clouseInfoPanleButton()
+    public void ClouseInfoPanleButton()
     {
-        disableAllPanel();
+        DisableAllPanel();
         ShowPanel(mainPanel);
     }
 
-    IEnumerator countingDownTime(int time)
+    IEnumerator CountingDownTime(int time)
     {
         int counter = time;
         while (counter > 0)
         {
-            updateVisualTimer(counter);
+            UpdateVisualTimer(counter);
             //we wait 1 second
             yield return new WaitForSeconds(1);
             counter--;
@@ -113,7 +108,7 @@ public class MenuControlScript : MonoBehaviour
         if(counter == 0)
         {
 
-            disableAllPanel();
+            DisableAllPanel();
             ShowPanel(mainPanel);
             //we are restoring button functionality
             showInfoButton.GetComponent<Button>().interactable = true;
